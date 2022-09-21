@@ -172,3 +172,45 @@ hr {
   height: 147px;
   padding: 15px;
 }
+
+.images {
+  padding: 10px 10px 10px;
+  
+}
+
+.buttom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 10px 10px 10px;
+  gap: 10px;
+  background: #FF6B00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  
+}
+.pro_Art{background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/placeholder.png');
+}
+
+.pro_Art_title{
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  width: 295px;
+  height: 81px;
+  color: #FFFFFF;
+
+}
+
+.pro_Art_paragraph{
+
+}
