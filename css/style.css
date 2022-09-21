@@ -505,7 +505,7 @@ button:active {
   border-radius: 150px;
 }
 
-.contact-me {
+/* .contact-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -552,9 +552,9 @@ textarea {
   padding-left: 10px;
   height: 114px;
   background: white;
-}
+} */
 
-footer {
+/* footer {
   border-top: 1px solid #dfe1e6;
   display: flex;
   justify-content: center;
@@ -579,4 +579,4 @@ footer {
   background: #0d151e;
   border-radius: 10px;
   margin-left: 48px;
-}
+} */
