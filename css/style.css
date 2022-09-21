@@ -167,7 +167,7 @@ li {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: white;
+  color: black;
 }
 
 .recent-works p {
@@ -298,8 +298,8 @@ button:active {
   color: #f4f1f0;
 }
 
-.recent-works button {
-  width: 124px;
+.recent-works button:not(.first_button){
+  width: 100%;
   height: 48px;
   float: left;
 }
@@ -314,14 +314,14 @@ button:active {
 }
 
 .card-content {
-  height: 386px;
+  height: 345px;
   background:
     linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
     ),
-    url(assets/Img\ Placeholder2.png);
+    url(../assets/ImgPlaceholder2.png);
   padding: 0 16px;
   padding-top: 84px;
 }
@@ -504,79 +504,3 @@ button:active {
   height: 18px;
   border-radius: 150px;
 }
-
-/* .contact-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: white;
-  padding: 120px 24px;
-}
-
-.contact-info > h6 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  width: 327px;
-  height: 216px;
-  color: #172b4d;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  padding: 8px;
-}
-
-input {
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  height: 48px;
-  border-style: none;
-  background: white;
-  padding-left: 5px;
-}
-
-textarea {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  border-style: none;
-  padding-left: 10px;
-  height: 114px;
-  background: white;
-} */
-
-/* footer {
-  border-top: 1px solid #dfe1e6;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: white;
-}
-
-.footer .social-icon ul {
-  display: flex;
-}
-
-.footer .social-icon ul li {
-  list-style-type: none;
-}
-
-.shape {
-  display: flex;
-  justify-content: center;
-  width: 134px;
-  height: 5px;
-  bottom: 8px;
-  background: #0d151e;
-  border-radius: 10px;
-  margin-left: 48px;
-} */
