@@ -124,26 +124,51 @@ a {
 .recent_work_title{
   display: flex;
   align-items: center;
-  padding: 15px;
-  width: 327px;
-  height: 83px; 
-  font-family: 'Crete Round';
+  padding: 13px;
+  font-family: 'Crete Round', sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 52px;
   color: #1C1A19;
+  padding-top: 150px;
 
 }
 
 hr {
   color: black;
   width: 327px;
-  height: 0px;
+  top: 107px;
   border: 1px solid #212121;
 }
 .woman{
   padding-top: 60px;
   padding-left: 15px;
   
+}
+
+.multi_post{
+  display: flex;
+  align-items: center;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091E42;
+  height: 36px;
+  padding: 15px;
+
+}
+
+.multi_post_para{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091E42;
+  width: 327px;
+  height: 147px;
+  padding: 15px;
 }
