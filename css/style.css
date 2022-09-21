@@ -298,7 +298,19 @@ button:active {
   color: #f4f1f0;
 }
 
-.recent-works button:not(.first_button){
+.work-card > button {
+  width: 100%;
+  cursor: pointer;
+}
+
+.about-text > button {
+  width: 161px;
+  height: 48px;
+  top: 395px;
+  left: 24px;
+}
+
+.recent-works button:not(.first_button) {
   width: 100%;
   height: 48px;
   float: left;
@@ -395,11 +407,6 @@ button:active {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.work-card > button {
-  width: 100%;
-  cursor: pointer;
-}
-
 .about-me {
   padding: 120px 24px;
   background-color: #1c1a19;
@@ -429,13 +436,6 @@ button:active {
   margin: 24px 0;
   width: 327px;
   height: 148px;
-}
-
-.about-text > button {
-  width: 161px;
-  height: 48px;
-  top: 395px;
-  left: 24px;
 }
 
 .about-text > hr {
