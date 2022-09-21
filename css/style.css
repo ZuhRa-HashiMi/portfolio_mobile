@@ -403,7 +403,7 @@ button:active {
 .about-me {
   padding: 120px 24px;
   background-color: #1c1a19;
-  background-image: url(assets/Frame.png);
+  background-image: url(../assets/Frame.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 280px;
