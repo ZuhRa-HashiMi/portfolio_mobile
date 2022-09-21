@@ -116,3 +116,22 @@ a {
   justify-content: space-between;
   height: 55px;
 }
+
+.recent_work{
+  background-color: white;
+}
+
+.recent_work_title{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 327px;
+  height: 83px; 
+  font-family: 'Crete Round';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  color: #1C1A19;
+
+}
