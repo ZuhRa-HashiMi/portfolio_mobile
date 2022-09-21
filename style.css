@@ -135,3 +135,10 @@ a {
   color: #1C1A19;
 
 }
+
+hr {
+  color: black;
+  width: 327px;
+  height: 0px;
+  border: 1px solid #212121;
+}
