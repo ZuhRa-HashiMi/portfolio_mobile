@@ -336,6 +336,7 @@ button:active {
     url(../assets/ImgPlaceholder2.png);
   padding: 0 16px;
   padding-top: 84px;
+  margin-top: 15px;
 }
 
 .card-content > p {
