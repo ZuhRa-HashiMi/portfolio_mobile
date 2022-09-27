@@ -506,3 +506,79 @@ button:active {
   height: 18px;
   border-radius: 150px;
 }
+.contact-me {
+  display: flex;
+  color: #172b4d;
+  flex-direction: column;
+  padding: 120px 24px;
+  background-color: white;
+}
+
+.contact-me h6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 8px;
+}
+
+input {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  height: 48px;
+  border-style: none;
+  border-color: #dbd8d7;
+  border-bottom-style: solid;
+  padding-left: 10px;
+}
+
+textarea {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  border-style: none;
+  padding-left: 10px;
+  height: 114px;
+  background-color:  #FBF8F7;;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+.footer .social-icon ul {
+  display: flex;
+  background-color: white;
+}
+
+.footer .social-icon ul li {
+  list-style-type: none;
+}
+
+.footer i {
+  color: #010308;
+}
+
+.shape {
+  margin: 21px;
+  width: 134px;
+  height: 5px;
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 12px;
+  align-self: center;
+}
