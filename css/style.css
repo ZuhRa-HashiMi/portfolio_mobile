@@ -150,7 +150,7 @@ li {
   width: 100%;
 }
 
-.card-content > h4 {
+.card-content>h4 {
   text-align: left;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -298,12 +298,12 @@ button:active {
   color: #f4f1f0;
 }
 
-.work-card > button {
+.work-card>button {
   width: 100%;
   cursor: pointer;
 }
 
-.about-text > button {
+.about-text>button {
   width: 161px;
   height: 48px;
   top: 395px;
@@ -316,7 +316,9 @@ button:active {
   float: left;
 }
 
+
 /* First-Profesional-Art-Printing-Data */
+
 .cards-section {
   padding-top: 30px;
   display: grid;
@@ -327,19 +329,13 @@ button:active {
 
 .card-content {
   height: 345px;
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url(../assets/ImgPlaceholder2.png);
+  background: linear-gradient( 180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../assets/ImgPlaceholder2.png);
   padding: 0 16px;
   padding-top: 84px;
   margin-top: 15px;
 }
 
-.card-content > p {
+.card-content>p {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -347,7 +343,7 @@ button:active {
   color: white;
 }
 
-.work-card .card-content > ul {
+.work-card .card-content>ul {
   display: flex;
 }
 
@@ -417,7 +413,7 @@ button:active {
   background-position-y: 280px;
 }
 
-.about-text > h2 {
+.about-text>h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -427,7 +423,7 @@ button:active {
   letter-spacing: 0.37px;
 }
 
-.about-text > p {
+.about-text>p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -439,7 +435,7 @@ button:active {
   height: 148px;
 }
 
-.about-text > hr {
+.about-text>hr {
   padding-top: 100px;
   border-top: none;
   border-left: none;
@@ -579,6 +575,3 @@ footer {
   align-self: center;
   margin-left: auto;
 }
-
-
-
