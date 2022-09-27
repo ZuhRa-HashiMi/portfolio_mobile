@@ -569,10 +569,6 @@ footer {
   list-style-type: none;
 }
 
-.footer i {
-  color: #010308;
-}
-
 .shape {
   margin: 21px;
   width: 134px;
@@ -581,4 +577,5 @@ footer {
   background: #0d151e;
   border-radius: 12px;
   align-self: center;
+  margin-left: auto;
 }
