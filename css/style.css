@@ -17,7 +17,6 @@ a {
 li {
   list-style: none;
   float: left;
- 
 }
 
 .topnav {
@@ -506,6 +505,7 @@ button:active {
   height: 18px;
   border-radius: 150px;
 }
+
 .contact-me {
   display: flex;
   color: #172b4d;
@@ -549,7 +549,7 @@ textarea {
   border-style: none;
   padding-left: 10px;
   height: 114px;
-  background-color:  #FBF8F7;;
+  background-color: #fbf8f7;
 }
 
 footer {
