@@ -691,3 +691,20 @@ footer {
   align-self: center;
   margin-left: auto;
 }
+
+.logo:hover {
+  text-decoration: none;
+  animation-name: rotate;
+  animation-duration: 1s;
+  background-color: whitesmoke;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
