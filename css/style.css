@@ -878,6 +878,27 @@ footer {
     justify-content: flex-start;
   }
 
+  .recent-work img {
+    margin-top: 0;
+    width: 650px;
+  }
+  .recent-work div {
+    padding: 0 24px;
+    align-self: flex-start;
+  }
+
+  .recent-work h4 {
+    font-size: 40px;
+    white-space: nowrap;
+    line-height: 54px;
+    padding-bottom: 20px;
+  }
+  .recent-work p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+
 
 
 
