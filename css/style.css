@@ -90,6 +90,7 @@ header {
   border-bottom: solid 1px #fff5e1;
   padding: 0 24px;
   text-align: left;
+  font-size: 20px;
 }
 
 header a {
@@ -139,11 +140,27 @@ i {
   padding-right: 24px;
   gap: 9px;
 }
-
-.main-content {
-  padding: 50px 20px 1px 15px;
-  background-color: black; 
-
+.main-content{
+position: relative;
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 24px;
+  overflow: hidden;
+}
+.main-content::before {
+  /* padding: 50px 20px 1px 15px;
+  background-color: black;  */
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: url('./image/Illustration-header@2x.png');
+  background-repeat: no-repeat;
+  background-position-x: 331px;
+  background-position-y: 300px;
+  background-size: 200px;
+  transform: rotate(351deg);
 }
 
 .headline {
@@ -708,3 +725,129 @@ footer {
     transform: rotate(360deg);
   }
 }
+/* Disktop version  */
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  header {
+    height: 48px;
+    background: #3e3c3c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+/* .logo{
+  width: 15%;
+  display: flex;
+
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5%;
+  width: 55%;
+  background-color: blue;
+  
+}
+.nav ul{
+  display: flex;
+  flex-direction: row;
+}
+.desktop-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5%;
+  width: 55%;
+  background-color: blue;
+
+}
+
+.humberger-menu{
+  display: none;
+} */
+}
+
+
+  /* .main-content::before {
+    background-position: 45% -50%;
+    background-size: 600px;
+    transform: rotate(351deg);
+  }
+  
+  .container {
+    width: 60%;
+  }
+
+  .recent-works {
+    padding: 100px;
+    width: 100%;
+    grid-template-columns: 700px;
+  }
+
+  .about-text p {
+    width: 50%;
+  }
+
+  .about-me {
+    content: '';
+    background-color: #1c1a19;
+    background-image: url(./image/illustration12.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 10%;
+    background-size: 450px;
+  }
+
+  .about-me .hr {
+    padding-top: 100px;
+  } */
+
+  
+@media screen and (min-width: 992px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 148px;
+    height: 48px;
+    align-items: center;
+  }
+
+  .desktop-nav {
+    position: static;
+    flex-direction: row;
+    transform: translateX(0%);
+    height: 48px;
+    padding: 0;
+  }
+
+  .desktop-nav li {
+    opacity: 10;
+    width: auto;
+    border: none;
+    padding: 0 1rem;
+  }
+
+  .desktop-nav li a {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .navbar .desktop-nav {
+    display: inline-block;
+    display: flex;
+  }
+
+  .desktop-nav .envelope {
+    display: inline;
+  }
+
+  .navbar .humberger-menu {
+    display: none;
+  } 
+
+  
