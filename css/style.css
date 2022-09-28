@@ -127,30 +127,16 @@ a:hover {
   display: none;
 }
 
-i {
-  color: white;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 24px;
-  padding-right: 24px;
-  gap: 9px;
-}
-.main-content{
-position: relative;
+.landing {
+  position: relative;
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
   padding: 100px 24px;
   overflow: hidden;
 }
-.main-content::before {
-  /* padding: 50px 20px 1px 15px;
-  background-color: black;  */
+
+.landing::before {
   content: '';
   position: absolute;
   width: 200%;
@@ -163,45 +149,42 @@ position: relative;
   transform: rotate(351deg);
 }
 
-.headline {
-  font-style: normal;
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 400;
-  font-size: 56px;
-  margin-top: 150px;
-  margin-bottom: 10px;
-  line-height: 64px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
-  text-decoration: none;
+.landing ul {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.landing .social-icon ul {
+  display: flex;
+  width: 40px;
   padding: 0;
 }
 
-.job-title {
-  font-family: 'Roboto', sans-serif;
+.intro h1 {
+  font-family: 'crete round', serif;
+  color: #ff6b00;
+  text-transform: uppercase;
+  padding: 10px 0;
+  line-height: 64px;
+  font-size: 56px;
+  width: 100%;
+}
+
+.intro h2 {
+  font-family: 'roboto', sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
   line-height: 32px;
-  margin: 1px;
-  color: #fff5e1;
-  padding: 0;
-  display: flex;
-  flex: 1;
-  flex-grow: 0;
-  order: 0;
 }
 
-.job-description {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+.intro p {
+  font-family: 'poppins', sans-serif;
   line-height: 24px;
-  color: white;
-  padding: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
 }
-
 .links {
   display: flex;
   flex-direction: row;
@@ -219,7 +202,6 @@ position: relative;
 .social_media {
   width: 200px;
   padding-top: 20px;
-  padding-left: 25px;
   display: flex;
   justify-content: space-between;
   height: 55px;
@@ -736,49 +718,14 @@ footer {
     align-items: center;
     width: 100%;
   }
-/* .logo{
-  width: 15%;
-  display: flex;
-
-}
-
-.navbar{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 5%;
-  width: 55%;
-  background-color: blue;
   
-}
-.nav ul{
-  display: flex;
-  flex-direction: row;
-}
-.desktop-nav{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 5%;
-  width: 55%;
-  background-color: blue;
-
-}
-
-.humberger-menu{
-  display: none;
-} */
-}
-
-
-  /* .main-content::before {
+  .landing::before {
     background-position: 45% -50%;
     background-size: 600px;
     transform: rotate(351deg);
   }
   
-  .container {
+  .intro{
     width: 60%;
   }
 
@@ -804,9 +751,10 @@ footer {
 
   .about-me .hr {
     padding-top: 100px;
-  } */
+  }  */
 
-  
+}
+
 @media screen and (min-width: 992px) {
   header {
     display: flex;
@@ -850,4 +798,3 @@ footer {
     display: none;
   } 
 
-  
