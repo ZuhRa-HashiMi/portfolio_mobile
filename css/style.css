@@ -142,6 +142,8 @@ i {
 
 .main-content {
   padding: 50px 20px 1px 15px;
+  background-color: black; 
+
 }
 
 .headline {
@@ -264,11 +266,12 @@ i {
 }
 
 .tech-used {
+  display: flex;
   height: 40px;
   margin-bottom: 12px;
 }
 
-.recent-works .css {
+/* .recent-works .css {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -340,7 +343,22 @@ i {
   margin: 0 12px 0 0;
   padding: 10px 12px;
   box-sizing: border-box;
+} */
+
+.recent-works li {
+  border: 1px solid black;
+  list-style: none;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  margin: 0 12px 0 0;
+  box-sizing: border-box;
+  padding: 10px 12px;
 }
+
 
 button {
   padding: 12px;
@@ -380,7 +398,7 @@ button:active {
   color: #f4f1f0;
 }
 
-.work-card > button {
+/* .work-card > button {
   width: 100%;
   cursor: pointer;
 }
@@ -396,7 +414,13 @@ button:active {
   width: 100%;
   height: 48px;
   float: left;
+} */
+.recent-works button {
+  width: 124px;
+  height: 48px;
+  float: left;
 }
+
 
 /* First-Profesional-Art-Printing-Data */
 
@@ -428,7 +452,7 @@ button:active {
   display: flex;
 }
 
-.card-content .html {
+/* .card-content .html {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -483,6 +507,17 @@ button:active {
   box-sizing: border-box;
   color: white;
   background-color: rgba(255, 255, 255, 0.24);
+} */
+
+.card-content li {
+  color: white;
+  background: rgba(255, 255, 255, 0.096);
+  border: none;
+}
+
+.work-card > button {
+  width: 100%;
+  cursor: pointer;
 }
 
 .about-me {
