@@ -804,3 +804,46 @@ footer {
     height: 800px;
     padding: 0 22px;
   }
+  .landing::before{
+    background-position: 45% -5%;
+    background-size: 600px;
+    transform: rotate(351deg);
+  }
+  .intro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    order: 2;
+    padding: 190px 0;
+    margin-left: 40px;
+  }
+  
+  .intro h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .intro h2 {
+    font-size: 32px;
+    line-height: 44px;
+    padding-bottom: 12px;
+  }
+
+  .intro p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-content: center;
+  }
+
+  .social-icon ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
