@@ -718,7 +718,7 @@ footer {
     align-items: center;
     width: 100%;
   }
-  
+
   .landing::before {
     background-position: 45% -50%;
     background-size: 600px;
@@ -798,3 +798,9 @@ footer {
     display: none;
   } 
 
+  .landing{
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    padding: 0 22px;
+  }
