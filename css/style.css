@@ -898,6 +898,34 @@ footer {
     line-height: 32px;
   }
 
+  .cards-section {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+  }
+  .work-card .card-content > ul {
+    justify-content: flex-start;
+    padding: 24px 0;
+  }
+  .card-content {
+    height: auto;
+    background-size: cover;
+  }
+  .card-content h4 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    padding-top: 24px;
+  }
+  .card-content p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+  }
+
+
+
+
 
 
 
