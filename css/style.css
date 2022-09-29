@@ -382,8 +382,6 @@ button:active {
   line-height: 24px;
   color: #f4f5f7;
   margin: 24px 0;
-  /* width: 327px;
-  height: 148px; */
 }
 
 
@@ -571,7 +569,6 @@ footer {
   .recent-works {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     padding: 10% 10%;
     grid-template-columns: 327px;
   }
@@ -596,13 +593,6 @@ footer {
   .project-button{
     display:none;
   }
-
-/* 
-  .recent-works {
-    padding: 100px;
-    width: 100%;
-    grid-template-columns: 700px;
-  } */
 
   .about-text p {
     width: 50%;
@@ -894,8 +884,6 @@ footer {
       transform: scale(1.1);
     }
   }
-
-
 
 }
 
