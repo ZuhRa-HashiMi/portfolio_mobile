@@ -808,14 +808,78 @@ footer {
     flex-direction: row;
     align-self: center;
   }
-
-
-  
   .about-me .skill-set ul ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+  .contact-me{
+    display: flex;
+    flex-direction: row;
+    padding: 140px;
+    gap: 40px;
+  }
+  .contact-me h6 {
+    width: 40%;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .contact-me form {
+    width: 60%;
+  }
+  #text:hover {
+    transition: 0.2s ease;
+    transition-duration: 1.5s;
+    transform: translate(15px);
+  }
+
+  .contact-me form button {
+    align-self: flex-start;
+  }
+  
+  .footer {
+    height: 72px;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  .logo:hover {
+    text-decoration: none;
+    animation-name: rotate;
+    animation-duration: 1s;
+    background-color: whitesmoke;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .women:hover {
+    text-decoration: none;
+    animation: z2 1s linear;
+  }
+
+  @keyframes z2 {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+
 
 }
 
