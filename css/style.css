@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -83,7 +82,6 @@ header {
   height: 100vh;
   padding-top: 48px;
 }
-
 
 .desktop-nav li {
   width: 100%;
@@ -185,6 +183,7 @@ a:hover {
   font-style: normal;
   font-weight: normal;
 }
+
 .recent-works {
   color: #1c1a19;
   background-color: white;
@@ -237,7 +236,6 @@ a:hover {
   margin-bottom: 12px;
 }
 
-
 .recent-works li {
   border: 1px solid black;
   list-style: none;
@@ -251,7 +249,6 @@ a:hover {
   box-sizing: border-box;
   padding: 10px 12px;
 }
-
 
 button {
   padding: 12px;
@@ -317,7 +314,7 @@ button:active {
     ),
     url(../image/Placeholder12.png);
   padding: 0 16px;
-  padding-top: 150px
+  padding-top: 150px;
 }
 
 .card-content > h4 {
@@ -330,7 +327,6 @@ button:active {
   color: white;
 }
 
-
 .card-content > p {
   font-size: 16px;
   font-style: normal;
@@ -342,7 +338,6 @@ button:active {
 .work-card .card-content > ul {
   display: flex;
 }
-
 
 .card-content li {
   color: white;
@@ -384,12 +379,10 @@ button:active {
   margin: 24px 0;
 }
 
-
 .about-text > button {
   width: 161px;
   height: 48px;
 }
-
 
 .about-text > hr {
   padding-top: 210px;
@@ -453,6 +446,7 @@ button:active {
   line-height: 43px;
   list-style: none;
 }
+
 .contact-me {
   display: flex;
   color: #172b4d;
@@ -543,9 +537,10 @@ footer {
     transform: rotate(360deg);
   }
 }
+
 /* Disktop version  */
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px) {
   header {
     height: 48px;
     background: #3e3c3c;
@@ -561,8 +556,8 @@ footer {
     background-size: 600px;
     transform: rotate(351deg);
   }
-  
-  .intro{
+
+  .intro {
     width: 60%;
   }
 
@@ -578,7 +573,6 @@ footer {
     grid-template-columns: 55% 45%;
     column-gap: 5%;
     margin-top: 15%;
-
   }
 
   .recent-work img {
@@ -590,8 +584,9 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 18px;
   }
-  .project-button{
-    display:none;
+
+  .project-button {
+    display: none;
   }
 
   .about-text p {
@@ -610,8 +605,7 @@ footer {
 
   .about-me .hr {
     padding-top: 100px;
-  }  
-
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -655,19 +649,21 @@ footer {
 
   .navbar .humberger-menu {
     display: none;
-  } 
+  }
 
-  .landing{
+  .landing {
     display: flex;
     flex-direction: row;
     height: 800px;
     padding: 0 22px;
   }
-  .landing::before{
+
+  .landing::before {
     background-position: 45% -5%;
     background-size: 600px;
     transform: rotate(351deg);
   }
+
   .intro {
     width: 50%;
     display: flex;
@@ -677,7 +673,7 @@ footer {
     padding: 190px 0;
     margin-left: 40px;
   }
-  
+
   .intro h1 {
     font-size: 72px;
     line-height: 82px;
@@ -693,7 +689,7 @@ footer {
     font-size: 20px;
     line-height: 32px;
   }
-  
+
   .social-icon {
     display: flex;
     align-content: center;
@@ -704,17 +700,20 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+
   .recent-works {
     display: grid;
     justify-content: center;
     grid-template-columns: 100%;
     padding: 100px 118px;
   }
+
   .recent-works .first {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .recent-works h3 {
     display: flex;
     align-items: center;
@@ -724,12 +723,14 @@ footer {
     white-space: nowrap;
     margin-left: 10px;
   }
+
   .recent-works hr {
     width: 100%;
     height: 2px;
     margin-left: 30px;
     margin-right: 20px;
   }
+
   .recent-work {
     display: flex;
     padding: 20px 10px;
@@ -740,6 +741,7 @@ footer {
     margin-top: 0;
     width: 650px;
   }
+
   .recent-work div {
     padding: 0 24px;
     align-self: flex-start;
@@ -751,6 +753,7 @@ footer {
     line-height: 54px;
     padding-bottom: 20px;
   }
+
   .recent-work p {
     font-size: 20px;
     line-height: 32px;
@@ -759,35 +762,40 @@ footer {
   .cards-section {
     grid-template-columns: 32% 32% 32%;
   }
+
   .work-card .card-content > ul {
     justify-content: flex-start;
     padding: 24px 0;
   }
+
   .card-content {
     height: auto;
     background-size: cover;
   }
+
   .card-content h4 {
     font-size: 32px;
     font-weight: 400;
     line-height: 44px;
     padding-top: 24px;
   }
+
   .card-content p {
     font-size: 17px;
     font-weight: 400;
     line-height: 24px;
     font-style: normal;
-  } 
-  .card-button{
+  }
+
+  .card-button {
     display: none;
   }
-  .about-text{
+
+  .about-text {
+    width: 50%;
     padding: 0 140px;
   }
-  .about-text{
-    width: 50%;
-  }
+
   .about-me {
     content: '';
     background-color: #1c1a19;
@@ -797,11 +805,12 @@ footer {
     background-position-y: 10%;
     background-size: 450px;
   }
-  
+
   .about-me .hr {
     padding-top: 100px;
   }
-  .about-me .skill-set{
+
+  .about-me .skill-set {
     padding: 120px 120px 0 120px;
   }
 
@@ -810,21 +819,25 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .footer .social-icon ul {
     flex-direction: row;
     align-self: center;
   }
+
   .about-me .skill-set ul ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  .contact-me{
+
+  .contact-me {
     display: flex;
     flex-direction: row;
     padding: 140px;
     gap: 40px;
   }
+
   .contact-me h6 {
     width: 40%;
     text-align: left;
@@ -836,6 +849,7 @@ footer {
   .contact-me form {
     width: 60%;
   }
+
   #text:hover {
     transition: 0.2s ease;
     transition-duration: 1.5s;
@@ -845,7 +859,7 @@ footer {
   .contact-me form button {
     align-self: flex-start;
   }
-  
+
   .footer {
     height: 72px;
   }
@@ -870,7 +884,8 @@ footer {
       transform: rotate(360deg);
     }
   }
-   .women:hover {
+
+  .women:hover {
     text-decoration: none;
     animation: z2 1s linear;
   }
@@ -884,6 +899,4 @@ footer {
       transform: scale(1.1);
     }
   }
-
 }
-
