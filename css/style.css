@@ -594,7 +594,7 @@ footer {
     grid-gap: 18px;
   }
   .project-button{
-    display:none
+    display:none;
   }
 
 /* 
@@ -789,6 +789,9 @@ footer {
     line-height: 24px;
     font-style: normal;
   } 
+  .card-button{
+    display: none;
+  }
   .about-text{
     padding: 0 140px;
   }
