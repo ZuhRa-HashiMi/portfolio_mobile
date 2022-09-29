@@ -19,7 +19,7 @@ body {
 
 header {
   position: relative;
-  height: 48px;
+  height: 72px;
   background: #3e3c3c;
   display: flex;
   align-items: center;
@@ -159,13 +159,12 @@ a:hover {
 }
 
 .intro h1 {
-  font-family: 'crete round', serif;
-  color: #ff6b00;
-  text-transform: uppercase;
-  padding: 10px 0;
-  line-height: 64px;
-  font-size: 56px;
-  width: 100%;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  color: #F55800;
 }
 
 .intro h2 {
@@ -542,7 +541,7 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   header {
-    height: 48px;
+    height: 72px;
     background: #3e3c3c;
     display: flex;
     justify-content: space-between;
@@ -614,7 +613,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 148px;
-    height: 48px;
+    height: 72px;
     align-items: center;
   }
 
