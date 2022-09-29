@@ -270,79 +270,6 @@ a:hover {
   margin-bottom: 12px;
 }
 
-/* .recent-works .css {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 49px;
-  height: 40px;
-  border: 1px solid #8993a4;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  font-style: normal;
-  color: #091e42;
-  margin: 0 12px 0 0;
-  padding: 10px 12px;
-  box-sizing: border-box;
-}
-
-.recent-works .HTML {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 56px;
-  height: 40px;
-  border: 1px solid #8993a4;
-  list-style: none;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  font-style: normal;
-  color: #091e42;
-  margin: 0 12px 0 0;
-  padding: 10px 12px;
-  box-sizing: border-box;
-}
-
-.recent-works .boots {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 95px;
-  height: 40px;
-  border: 1px solid #8993a4;
-  list-style: none;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  font-style: normal;
-  color: #091e42;
-  margin: 0 12px 0 0;
-  padding: 10px 12px;
-  box-sizing: border-box;
-}
-
-.recent-works .ruby {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 61px;
-  height: 40px;
-  border: 1px solid #8993a4;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  font-style: normal;
-  color: #091e42;
-  margin: 0 12px 0 0;
-  padding: 10px 12px;
-  box-sizing: border-box;
-} */
 
 .recent-works li {
   border: 1px solid black;
@@ -397,23 +324,6 @@ button:active {
   color: #f4f1f0;
 }
 
-/* .work-card > button {
-  width: 100%;
-  cursor: pointer;
-}
-
-.about-text > button {
-  width: 161px;
-  height: 48px;
-  top: 395px;
-  left: 24px;
-}
-
-.recent-works button:not(.first_button) {
-  width: 100%;
-  height: 48px;
-  float: left;
-} */
 .recent-works button {
   width: 124px;
   height: 48px;
@@ -451,62 +361,6 @@ button:active {
   display: flex;
 }
 
-/* .card-content .html {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 56px;
-  height: 40px;
-  border: 1px solid #8993a4;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  font-style: normal;
-  margin: 0 12px 0 0;
-  padding: 10px 12px;
-  box-sizing: border-box;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.24);
-}
-
-.card-content .Boot {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 95px;
-  height: 40px;
-  border: 1px solid #8993a4;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  font-style: normal;
-  margin: 0 12px 0 0;
-  padding: 10px 12px;
-  box-sizing: border-box;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.24);
-}
-
-.card-content .Ruby {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 61px;
-  height: 40px;
-  border: 1px solid #8993a4;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  font-style: normal;
-  margin: 0 12px 0 0;
-  padding: 10px 12px;
-  box-sizing: border-box;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.24);
-} */
 
 .card-content li {
   color: white;
@@ -922,12 +776,46 @@ footer {
     line-height: 24px;
     font-style: normal;
   }
+  .about-text{
+    padding: 0 140px;
+  }
+  .about-text{
+    width: 50%;
+  }
+  .about-me {
+    content: '';
+    background-color: #1c1a19;
+    background-image: url(./image/illustration12.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 10%;
+    background-size: 450px;
+  }
+  
+  .about-me .hr {
+    padding-top: 100px;
+  }
+  .about-me .skill-set{
+    padding: 120px 120px 0 120px;
+  }
+
+  .about-me .skill-set ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .social-icon ul {
+    flex-direction: row;
+    align-self: center;
+  }
 
 
-
-
-
-
-
+  
+  .about-me .skill-set ul ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
 }
+
