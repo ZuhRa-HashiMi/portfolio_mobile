@@ -141,7 +141,7 @@ a:hover {
   position: absolute;
   width: 200%;
   height: 200%;
-  background-image: url('./image/Illustration-header@2x.png');
+  background-image: url('../image/Illustration-header@2x.png');
   background-repeat: no-repeat;
   background-position-x: 331px;
   background-position-y: 300px;
@@ -199,13 +199,13 @@ a:hover {
   background-size: 158px;
 }
 
-.social_media {
+/* .social_media {
   width: 200px;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
   height: 55px;
-}
+} */
 
 .recent-works {
   color: #1c1a19;
@@ -864,7 +864,7 @@ footer {
       transform: rotate(360deg);
     }
   }
-  .women:hover {
+   .women:hover {
     text-decoration: none;
     animation: z2 1s linear;
   }
