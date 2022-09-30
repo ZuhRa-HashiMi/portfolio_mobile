@@ -302,7 +302,8 @@ button:active {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: 1fr; 
+  grid-template-rows: 1fr;
+
   /* display: flex;
   align-self: center;
   flex-direction: column; */
@@ -318,7 +319,8 @@ button:active {
     ),
     url(../image/Placeholder12.png);
   padding: 0 16px;
-  padding-top: 150px; 
+  padding-top: 150px;
+
   /* height: 386px;
   width: 327px;
   display: flex;
@@ -785,11 +787,35 @@ footer {
     flex-wrap: wrap;
   }
 
+  
+  .card-content h4 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    padding-top: 24px;
+  }
+
+  
+  .card-content p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+  }
+
+
+
   .work-card:hover h4,
   .work-card:hover p,
-  .work-card:hover ul li{
+  .work-card:hover ul li {
     visibility: hidden;
   }
+
+  
+  .card-button {
+    visibility: hidden;
+  }
+
 
   .work-card:hover .card-button {
     visibility: visible;
@@ -803,24 +829,6 @@ footer {
   .card-content {
     height: auto;
     background-size: cover;
-  }
-
-  .card-content h4 {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 44px;
-    padding-top: 24px;
-  }
-
-  .card-content p {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 24px;
-    font-style: normal;
-  }
-
-  .card-button {
-    visibility: hidden;
   }
 
   .about-text {
@@ -841,7 +849,7 @@ footer {
   .about-me .hr {
     width: 250%;
     margin-left: 5px;
-    padding-top: 100px; 
+    padding-top: 100px;
   }
 
   .about-me .skill-set {
