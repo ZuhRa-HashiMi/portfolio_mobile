@@ -301,7 +301,10 @@ button:active {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr; 
+  /* display: flex;
+  align-self: center;
+  flex-direction: column; */
 }
 
 .card-content {
@@ -314,7 +317,16 @@ button:active {
     ),
     url(../image/Placeholder12.png);
   padding: 0 16px;
-  padding-top: 150px;
+  padding-top: 150px; 
+  /* height: 386px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 50px;
+  background-image: url(../image/Placeholder12.png);
+  background-color: #ccc;
+  padding: 24px 0 24px 0; */
 }
 
 .card-content > h4 {
@@ -760,8 +772,43 @@ footer {
   }
 
   .cards-section {
-    grid-template-columns: 32% 32% 32%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    padding: 10px;
+    margin-right: 5px;
   }
+
+  .work-card {
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work-card:hover h4{
+    display: none;
+  }
+
+  .work-card:hover p {
+    display: none;
+  }
+
+
+  .work-card:hover .card-button {
+    display: flex;
+    top: 80%;
+    margin-top: 50px;
+  }
+
+  .card-content:hover{
+    display: none;
+  }
+  .work-card:hover {
+    background-image: url(../image/hover.png);
+    padding-top: 340px;
+  }
+
 
   .work-card .card-content > ul {
     justify-content: flex-start;
