@@ -250,7 +250,7 @@ a:hover {
   padding: 10px 12px;
 }
 
-button {
+.card-button {
   padding: 12px;
   display: flex;
   justify-content: center;
@@ -786,14 +786,12 @@ footer {
     flex-wrap: wrap;
   }
 
-  .work-card:hover h4{
-    display: none;
+  .work-card:hover h4,
+  .work-card:hover p,
+  .work-card:hover ul li{
+    visibility: hidden;
   }
-
-  .work-card:hover p {
-    display: none;
-  }
-
+ 
 
   .work-card:hover .card-button {
     display: flex;
@@ -803,11 +801,11 @@ footer {
 
   .card-content:hover{
     display: none;
-  }
+  } 
   .work-card:hover {
     background-image: url(../image/hover.png);
     padding-top: 340px;
-  }
+  } 
 
 
   .work-card .card-content > ul {
@@ -854,7 +852,9 @@ footer {
   }
 
   .about-me .hr {
-    padding-top: 100px;
+    width: 250%;
+    margin-left: 5px;
+    padding-top: 100px; 
   }
 
   .about-me .skill-set {
