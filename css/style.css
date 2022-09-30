@@ -787,7 +787,6 @@ footer {
     flex-wrap: wrap;
   }
 
-  
   .card-content h4 {
     font-size: 32px;
     font-weight: 400;
@@ -795,7 +794,6 @@ footer {
     padding-top: 24px;
   }
 
-  
   .card-content p {
     font-size: 17px;
     font-weight: 400;
@@ -803,19 +801,15 @@ footer {
     font-style: normal;
   }
 
-
-
   .work-card:hover h4,
   .work-card:hover p,
   .work-card:hover ul li {
     visibility: hidden;
   }
 
-  
   .card-button {
     visibility: hidden;
   }
-
 
   .work-card:hover .card-button {
     visibility: visible;
@@ -872,7 +866,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-
+/* contact me section */
   .contact-me {
     display: flex;
     flex-direction: row;
