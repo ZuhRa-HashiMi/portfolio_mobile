@@ -19,7 +19,7 @@ body {
 
 header {
   position: relative;
-  height: 48px;
+  height: 72px;
   background: #3e3c3c;
   display: flex;
   align-items: center;
@@ -138,13 +138,14 @@ a:hover {
   content: '';
   position: absolute;
   width: 200%;
-  height: 200%;
+  height: 250%;
   background-image: url('../image/Illustration-header@2x.png');
   background-repeat: no-repeat;
   background-position-x: 331px;
   background-position-y: 300px;
   background-size: 200px;
   transform: rotate(351deg);
+  top: 50px;
 }
 
 .landing ul {
@@ -777,12 +778,9 @@ footer {
     grid-template-rows: 50% 50%;
     column-gap: 3%;
     width: 100%;
-    /* padding: 10px; */
-    /* margin-right: 5px; */
   }
 
   .work-card {
-    /* margin-right: 10px; */
     display: flex;
     flex-wrap: wrap;
   }
@@ -794,29 +792,8 @@ footer {
   }
 
   .work-card:hover .card-button {
-    /* visibility: visible; */
-    /* top: 80%;
-    margin-top: 30%;
-    display: flex; */
-    /* display: block; */
     visibility: visible;
-    /* display: block; */
   }
-
-  /* .work-card:hover h4,
-  .work-card:hover p,
-  .work-card:hover ul li + .card-button {
-    display: block;
-  } */
-
-  /* .card-content:hover {
-    display: none;
-
-  } 
-.work-card:hover {
-  background-image: url('../image/hover.png');
-  padding-top: 340px;
-} */
 
   .work-card .card-content > ul {
     justify-content: flex-start;
@@ -844,7 +821,6 @@ footer {
 
   .card-button {
     visibility: hidden;
-    /* display: none; */
   }
 
   .about-text {
