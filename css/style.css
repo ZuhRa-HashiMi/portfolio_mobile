@@ -197,9 +197,9 @@ a:hover {
 .recent-works h3 {
   text-align: center;
   border-bottom: #000 3px;
-  font-size: 40px;
+  font-size: 60px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 52px;
   height: 83px;
   margin-bottom: 20px;
@@ -278,8 +278,8 @@ button:enabled {
 }
 
 button:hover {
-  border: 1px solid #f55b00;
-  background-color: #fff5e1;
+  border: 1px solid #f85b00;
+  background-color: #ffffff;
   color: #f55800;
 }
 
@@ -303,10 +303,6 @@ button:active {
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: 1fr;
-
-  /* display: flex;
-  align-self: center;
-  flex-direction: column; */
 }
 
 .card-content {
@@ -320,16 +316,6 @@ button:active {
     url(../image/Placeholder12.png);
   padding: 0 16px;
   padding-top: 150px;
-
-  /* height: 386px;
-  width: 327px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  margin-top: 50px;
-  background-image: url(../image/Placeholder12.png);
-  background-color: #ccc;
-  padding: 24px 0 24px 0; */
 }
 
 .card-content > h4 {
@@ -388,7 +374,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
   margin: 24px 0;
@@ -397,6 +383,8 @@ button:active {
 .about-text > button {
   width: 161px;
   height: 48px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .about-text > hr {
@@ -918,6 +906,21 @@ footer {
 
     to {
       transform: rotate(360deg);
+    }
+  }
+
+  .women:hover {
+    text-decoration: none;
+    animation: z2 1s linear;
+  }
+
+  @keyframes z2 {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
     }
   }
 }
