@@ -279,7 +279,7 @@ button:enabled {
 
 button:hover {
   border: 1px solid #f85b00;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #f55800;
 }
 
