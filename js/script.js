@@ -6,10 +6,12 @@ const navSlide = () => {
     burger.classList.toggle('toggle');
   });
 
-  document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-    nav.classList.remove('nav-active');
-    burger.classList.remove('toggle');
-  }));
+  document.querySelectorAll('.nav-link').forEach(n =>
+    n.addEventListener('click', () => {
+      nav.classList.remove('nav-active');
+      burger.classList.remove('toggle');
+    })
+  );
 };
 
 navSlide();
