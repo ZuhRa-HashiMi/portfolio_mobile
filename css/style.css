@@ -162,10 +162,9 @@ a:hover {
 .intro h1 {
   font-family: 'crete round', serif;
   color: #ff6b00;
-  text-transform: uppercase;
   padding: 10px 0;
   line-height: 64px;
-  font-size: 56px;
+  font-size: 50px;
   width: 100%;
 }
 
