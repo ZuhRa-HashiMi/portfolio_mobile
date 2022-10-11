@@ -47,7 +47,7 @@ header {
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
-  background-color: #67798E;
+  background-color: #67798e;
 }
 
 .toggle .line2 {
@@ -56,7 +56,7 @@ header {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-  background-color: #67798E;
+  background-color: #67798e;
 }
 
 .navbar ul {
@@ -83,7 +83,6 @@ header {
   transform: translateX(0%) translateY(-48px);
   height: 100vh;
   padding-top: 48px;
-
 }
 
 .desktop-nav li {
