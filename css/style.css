@@ -303,10 +303,6 @@ button:active {
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: 1fr;
-
-  /* display: flex;
-  align-self: center;
-  flex-direction: column; */
 }
 
 .card-content {
@@ -321,15 +317,6 @@ button:active {
   padding: 0 16px;
   padding-top: 150px;
 
-  /* height: 386px;
-  width: 327px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  margin-top: 50px;
-  background-image: url(../image/Placeholder12.png);
-  background-color: #ccc;
-  padding: 24px 0 24px 0; */
 }
 
 .card-content > h4 {
@@ -551,6 +538,24 @@ footer {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Modal Section */
+.modal-section {
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  padding: 45px 10px 30px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s ease 0.5s;
+  z-index: 99999; 
+  
 }
 
 /* Disktop version  */
