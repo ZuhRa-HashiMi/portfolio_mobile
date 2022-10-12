@@ -551,8 +551,8 @@ footer {
   width: 100%;
   backdrop-filter: blur(10px);
   padding: 45px 10px 30px 10px;
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0;
+  visibility: hidden; */
   transition: visibility 0s ease 0.5s;
   z-index: 99999; 
   
