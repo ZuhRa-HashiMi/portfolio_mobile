@@ -596,6 +596,10 @@ footer {
   padding-top: 10px;
 }
 
+.modal-btn button {
+  font-size: 18px;
+  padding: 12px;
+}
 /* Disktop version  */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
