@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
 const navSlide = () => {
   const burger = document.querySelector('.humberger-menu');
@@ -13,3 +14,18 @@ const navSlide = () => {
 };
 
 navSlide();
+
+/* single Project section modal */
+const modalBtn = document.querySelector('.project-button');
+const modalBg = document.querySelector('.modal-section');
+const modalClose = document.querySelector('.close-btn');
+
+modalBtn.addEventListener('click', () => {
+  modalBg.style.visibility = 'visible';
+  modalBtn.style.opacity = 1;
+});
+
+modalClose.addEventListener('click', () => {
+  modalBg.style.visibility = 'hidden';
+  modalBg.style.opacity = 0;
+});
