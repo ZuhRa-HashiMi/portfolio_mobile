@@ -600,6 +600,20 @@ footer {
   font-size: 18px;
   padding: 12px;
 }
+
+.modal .multi-image {
+  width: 100%;
+}
+
+#tech-used {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 17px;
+
+}
 /* Disktop version  */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
