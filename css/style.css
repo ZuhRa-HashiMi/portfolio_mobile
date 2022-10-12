@@ -2,8 +2,8 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 html,
@@ -19,7 +19,7 @@ body {
 
 header {
   position: relative;
-  height: 72px;
+  height: 48px;
   background: #3e3c3c;
   display: flex;
   align-items: center;
@@ -47,7 +47,6 @@ header {
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
-  background-color: #67798e;
 }
 
 .toggle .line2 {
@@ -56,7 +55,6 @@ header {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-  background-color: #67798e;
 }
 
 .navbar ul {
@@ -126,6 +124,10 @@ a:hover {
   display: none;
 }
 
+i {
+  color: white;
+}
+
 .landing {
   position: relative;
   background-color: #1c1a19;
@@ -139,14 +141,13 @@ a:hover {
   content: '';
   position: absolute;
   width: 200%;
-  height: 250%;
-  background-image: url('../image/Illustration-header@2x.png');
+  height: 200%;
+  background-image: url('./image/Illustration-header@2x.png');
   background-repeat: no-repeat;
   background-position-x: 331px;
   background-position-y: 300px;
   background-size: 200px;
   transform: rotate(351deg);
-  top: 50px;
 }
 
 .landing ul {
@@ -163,9 +164,10 @@ a:hover {
 .intro h1 {
   font-family: 'crete round', serif;
   color: #ff6b00;
+  text-transform: uppercase;
   padding: 10px 0;
   line-height: 64px;
-  font-size: 50px;
+  font-size: 56px;
   width: 100%;
 }
 
@@ -187,7 +189,6 @@ a:hover {
 
 .recent-works {
   color: #1c1a19;
-  background-color: white;
   display: grid;
   justify-content: center;
   padding: 120px 24px 120px 24px;
@@ -196,10 +197,10 @@ a:hover {
 
 .recent-works h3 {
   text-align: center;
-  border-bottom: #000 3px;
-  font-size: 40px;
+  border-bottom: black 3px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
+  font-size: 40px;
   line-height: 52px;
   height: 83px;
   margin-bottom: 20px;
@@ -251,15 +252,10 @@ a:hover {
   padding: 10px 12px;
 }
 
-.card-button {
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
+button {
+  font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   border: none;
@@ -278,8 +274,8 @@ button:enabled {
 }
 
 button:hover {
-  border: 1px solid #f55b00;
   background-color: #fff5e1;
+  border: 1px solid #f55b00;
   color: #f55800;
 }
 
@@ -294,8 +290,6 @@ button:active {
   height: 48px;
   float: left;
 }
-
-/* First-Profesional-Art-Printing-Data */
 
 .cards-section {
   padding-top: 30px;
@@ -315,25 +309,26 @@ button:active {
     ),
     url(../image/Placeholder12.png);
   padding: 0 16px;
-  padding-top: 150px;
-
+  padding-top: 84px;
 }
 
 .card-content > h4 {
-  text-align: left;
-  font-family: 'Crete Round', sans-serif;
+  font-family: Crete Round, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 32px;
   line-height: 44px;
   color: white;
+  padding-top: 45px;
 }
 
 .card-content > p {
-  font-size: 16px;
+  font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
+  font-size: 16px;
   line-height: 24px;
+  margin-top: 12px;
   color: white;
 }
 
@@ -362,9 +357,6 @@ button:active {
 }
 
 .about-text > h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 72px;
   line-height: 88px;
   color: #ff6b00;
@@ -372,10 +364,10 @@ button:active {
 }
 
 .about-text > p {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
   margin: 24px 0;
@@ -412,36 +404,37 @@ button:active {
 }
 
 .languages {
-  font-family: 'InaiMathi', sans-serif;
-  color: white;
+  font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  list-style: none;
+  list-style-type: none;
+  list-style-position: inside;
 }
 
 .frameworks {
-  font-family: 'Inter', sans-serif;
-  color: white;
+  font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  list-style: none;
+  list-style-type: none;
+  list-style-position: inside;
 }
 
 .skills {
-  font-family: 'Inter', sans-serif;
-  color: white;
+  font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  list-style: none;
+  list-style-type: none;
+  list-style-position: inside;
 }
 
 .skill-item {
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -454,7 +447,6 @@ button:active {
   color: #172b4d;
   flex-direction: column;
   padding: 120px 24px;
-  background-color: white;
 }
 
 .contact-me h6 {
@@ -492,7 +484,7 @@ textarea {
   border-style: none;
   padding-left: 10px;
   height: 114px;
-  background-color: #fbf8f7;
+  background: #fbf8f7;
 }
 
 footer {
@@ -500,16 +492,18 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: white;
 }
 
 .footer .social-icon ul {
   display: flex;
-  background-color: white;
 }
 
 .footer .social-icon ul li {
   list-style-type: none;
+}
+
+.footer i {
+  color: #505f79;
 }
 
 .shape {
@@ -520,7 +514,6 @@ footer {
   background: #0d151e;
   border-radius: 12px;
   align-self: center;
-  margin-left: auto;
 }
 
 .logo:hover {
@@ -540,13 +533,13 @@ footer {
   }
 }
 
-/* Modal Section */
+/* Modal section  */
 .modal-section {
   position: fixed;
   overflow: scroll;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
   width: 100%;
   backdrop-filter: blur(10px);
@@ -554,9 +547,9 @@ footer {
   opacity: 0;
   visibility: hidden;
   transition: visibility 0s ease 0.5s;
-  z-index: 99999; 
-  
+  z-index: 99999;
 }
+
 .modal-active {
   visibility: visible;
   opacity: 1;
@@ -565,14 +558,14 @@ footer {
 .modal {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  padding: 10px;
+  background-color: #fff;
   color: black;
+  padding: 10px;
   margin-top: auto;
   margin-bottom: auto;
   overflow: scroll;
-
 }
+
 .modal h3 {
   font-size: 32px;
   line-height: 42px;
@@ -585,8 +578,8 @@ footer {
   position: fixed;
   top: 15%;
   left: 85%;
-
 }
+
 .modal p {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -616,7 +609,6 @@ footer {
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 17px;
-
 }
 
 #tech-used .item {
@@ -653,7 +645,6 @@ footer {
   align-self: flex-end;
   transform: translate(-10px, 10px);
 }
-
 
 .new-title {
   color: #172b4d;
@@ -700,7 +691,6 @@ footer {
   padding-left: 1%;
 }
 
-
 .button {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -713,6 +703,7 @@ footer {
   text-decoration: none;
   padding-left: 1%;
 }
+
 .new-btns a:hover {
   background-color: #fff5e1;
   border: 1px solid #f55b00;
@@ -740,7 +731,8 @@ footer {
   width: 99%;
   grid-area: a;
 }
-/* Disktop version  */
+
+/* Desktop Version */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   header {
@@ -764,31 +756,9 @@ footer {
   }
 
   .recent-works {
-    display: flex;
-    flex-direction: column;
-    padding: 10% 10%;
-    grid-template-columns: 327px;
-  }
-
-  .recent-work {
-    display: grid;
-    grid-template-columns: 55% 45%;
-    column-gap: 5%;
-    margin-top: 15%;
-  }
-
-  .recent-work img {
-    margin-top: 0;
-  }
-
-  .project-work-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 18px;
-  }
-
-  .project-button {
-    display: none;
+    padding: 100px;
+    width: 100%;
+    grid-template-columns: 700px;
   }
 
   .about-text p {
@@ -798,7 +768,7 @@ footer {
   .about-me {
     content: '';
     background-color: #1c1a19;
-    background-image: url(../image/illustration12.png);
+    background-image: url(./image/illustration12.png);
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 10%;
@@ -808,6 +778,7 @@ footer {
   .about-me .hr {
     padding-top: 100px;
   }
+
   .modal-section {
     padding: 30px;
   }
@@ -901,10 +872,10 @@ footer {
   }
 
   .landing {
-    display: flex;
-    flex-direction: row;
     height: 800px;
     padding: 0 22px;
+    display: flex;
+    flex-direction: row;
   }
 
   .landing::before {
@@ -1009,16 +980,17 @@ footer {
   }
 
   .cards-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
-    column-gap: 3%;
-    width: 100%;
+    grid-template-columns: 32% 32% 32%;
   }
 
-  .work-card {
-    display: flex;
-    flex-wrap: wrap;
+  .work-card .card-content > ul {
+    justify-content: flex-start;
+    padding: 24px 0;
+  }
+
+  .card-content {
+    height: auto;
+    background-size: cover;
   }
 
   .card-content h4 {
@@ -1035,39 +1007,18 @@ footer {
     font-style: normal;
   }
 
-  .work-card:hover h4,
-  .work-card:hover p,
-  .work-card:hover ul li {
-    visibility: hidden;
-  }
-
-  .card-button {
-    visibility: hidden;
-  }
-
-  .work-card:hover .card-button {
-    visibility: visible;
-  }
-
-  .work-card .card-content > ul {
-    justify-content: flex-start;
-    padding: 24px 0;
-  }
-
-  .card-content {
-    height: auto;
-    background-size: cover;
-  }
-
   .about-text {
-    width: 50%;
     padding: 0 140px;
+  }
+
+  .about-text p {
+    width: 50%;
   }
 
   .about-me {
     content: '';
     background-color: #1c1a19;
-    background-image: url(../image/illustration12.png);
+    background-image: url(./image/illustration12.png);
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 10%;
@@ -1075,8 +1026,6 @@ footer {
   }
 
   .about-me .hr {
-    width: 250%;
-    margin-left: 5px;
     padding-top: 100px;
   }
 
@@ -1153,5 +1102,99 @@ footer {
     to {
       transform: rotate(360deg);
     }
+  }
+
+  .women:hover {
+    text-decoration: none;
+    animation: z2 1s linear;
+  }
+
+  @keyframes z2 {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  /* pop up window */
+
+  .modal-section {
+    padding: 60px 80px;
+  }
+
+  .modal {
+    padding: 20px;
+    border: solid 4px #ff6b00;
+  }
+
+  .modal .close-btn {
+    cursor: pointer;
+    position: fixed;
+    top: 15%;
+    left: 88%;
+  }
+
+  .modal h3 {
+    padding-top: 10px;
+    font-size: 2.8rem;
+    padding-bottom: 10px;
+  }
+
+  .modal-content {
+    display: flex;
+    gap: 15px;
+  }
+
+  .sec-container {
+    display: grid;
+    grid-template-areas:
+      'a a a b b'
+      'a a a b b'
+      'a a a c c';
+    column-gap: 20px;
+  }
+
+  .new-btns {
+    grid-area: c;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .modal p {
+    font-size: 16px;
+    grid-area: b;
+    padding: 0;
+  }
+
+  .modal .modal-btn {
+    justify-content: flex-start;
+    gap: 10px;
+    padding-top: 50px;
+  }
+
+  .modal .multi-image {
+    width: 60%;
+    height: auto;
+  }
+
+  .modal-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .popup {
+    padding: 60px 80px;
+  }
+
+  .new-project-img {
+    width: 38rem;
+    grid-area: a;
   }
 }

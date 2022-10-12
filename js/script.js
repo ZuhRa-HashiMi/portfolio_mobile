@@ -6,6 +6,7 @@ const navSlide = () => {
     nav.classList.toggle('nav-active');
     burger.classList.toggle('toggle');
   });
+
   document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
     nav.classList.remove('nav-active');
     burger.classList.remove('toggle');
@@ -15,15 +16,15 @@ const navSlide = () => {
 navSlide();
 
 /* single Project section modal */
+
 const modalBtn = document.querySelector('.project-button');
 const modalBg = document.querySelector('.modal-section');
 const modalClose = document.querySelector('.close-btn');
 
 modalBtn.addEventListener('click', () => {
   modalBg.style.visibility = 'visible';
-  modalBtn.style.opacity = 1;
+  modalBg.style.opacity = 1;
 });
-
 modalClose.addEventListener('click', () => {
   modalBg.style.visibility = 'hidden';
   modalBg.style.opacity = 0;
@@ -31,16 +32,20 @@ modalClose.addEventListener('click', () => {
 
 /* card-modal */
 
-// eslint-disable-next-line no-unused-vars
-const popupBtn = document.querySelector('.card-button');
+const popupBtn = document.querySelectorAll('.card-button');
+
 const popupTitle = [];
-document.querySelector('div.flex-container > h4').forEach((item) => {
+document.querySelectorAll('div.flex-container > h4').forEach((item) => {
   popupTitle.push(item.textContent);
 });
+
 const popupTechno = ['HTML', 'Bootstrap', 'Ruby on Rails'];
+
 const popupDescrip = 'Budget-App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what';
-const popupLive = 'https://budget1-app.herokuapp.com/splashs/index/';
-const popupSource = 'https://github.com/ZuhRa-HashiMi/budget-app';
+const popupLive = 'https://github.com/ZuhRa-HashiMi';
+
+const popupSource = 'https://github.com/ZuhRa-HashiMi';
+
 const popupObj = {};
 for (let i = 0; i < popupTitle.length; i += 1) {
   popupObj[`Project${i}`] = {};
@@ -54,13 +59,15 @@ for (let i = 0; i < popupTitle.length; i += 1) {
 const popupSection = document.createElement('section');
 popupSection.className = 'popup-section';
 document.body.appendChild(popupSection);
+
 const modal = document.createElement('div');
 modal.className = 'modal';
 popupSection.appendChild(modal);
+
 const newCloseImg = document.createElement('img');
 newCloseImg.className = 'new-close-img';
 newCloseImg.src = 'image/x-icon.png';
-newCloseImg.alt = 'close icon';
+newCloseImg.alt = 'Close icon';
 modal.appendChild(newCloseImg);
 
 const newTitle = document.createElement('h3');
@@ -94,26 +101,24 @@ modalContainer.appendChild(newDescription);
 const newBtns = document.createElement('div');
 newBtns.className = 'new-btns';
 modalContainer.appendChild(newBtns);
-
 const firstBtn = document.createElement('a');
 firstBtn.href = popupObj.Project0.liveLink;
 firstBtn.className = 'button';
 firstBtn.textContent = 'See Live';
 newBtns.appendChild(firstBtn);
-
 const secondBtn = document.createElement('a');
 secondBtn.href = popupObj.Project0.sourceLink;
 secondBtn.className = 'button';
 secondBtn.textContent = 'See Source';
 newBtns.appendChild(secondBtn);
 
-// eslint-disable-next-line no-unused-vars
 const openPopup = (item) => {
   popupSection.classList.toggle('popup');
   popupSection.classList.toggle('popup-section');
+
   for (let i = 0; i < popupTitle.length; i += 1) {
     if (item.target === popupBtn[i]) {
-      newTitle.textContent = popupObj[`project${i}`].title;
+      newTitle.textContent = popupObj[`Project${i}`].title;
     }
   }
 };
