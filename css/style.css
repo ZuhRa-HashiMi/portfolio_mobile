@@ -576,7 +576,6 @@ footer {
   padding-bottom: 40px;
 }
 
-
 .modal .close-btn {
   cursor: pointer;
   position: fixed;
@@ -584,6 +583,13 @@ footer {
   left: 85%;
 
 }
+.modal p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+
 /* Disktop version  */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
