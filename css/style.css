@@ -551,11 +551,15 @@ footer {
   width: 100%;
   backdrop-filter: blur(10px);
   padding: 45px 10px 30px 10px;
-  /* opacity: 0;
-  visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
   transition: visibility 0s ease 0.5s;
   z-index: 99999; 
   
+}
+.modal-active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal {
@@ -683,6 +687,59 @@ footer {
   padding-left: 1%;
 }
 
+.new-techno {
+  justify-content: start;
+  padding-left: 1%;
+}
+
+.new-description {
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  color: #344563;
+  padding-left: 1%;
+}
+
+
+.button {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  border: none;
+  padding: 12px;
+  height: 48px;
+  align-self: center;
+  text-decoration: none;
+  padding-left: 1%;
+}
+.new-btns a:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55b00;
+  color: #f55800;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  padding-bottom: 17px;
+}
+
+.tags h6 {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #3a4a42;
+  margin: 0;
+  border: solid 2px gray;
+  padding: 6px;
+}
+
+.new-project-img {
+  width: 99%;
+  grid-area: a;
+}
 /* Disktop version  */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -750,6 +807,53 @@ footer {
 
   .about-me .hr {
     padding-top: 100px;
+  }
+  .modal-section {
+    padding: 30px;
+  }
+
+  .modal {
+    padding: 15px;
+  }
+
+  .modal h3 {
+    padding-top: 5px;
+    font-size: 2.8rem;
+    padding-bottom: 20px;
+  }
+
+  .modal .close-btn {
+    left: 85%;
+    top: 15%;
+  }
+
+  .modal-details {
+    display: flex;
+    gap: 40px;
+  }
+
+  .modal p {
+    width: 60%;
+  }
+
+  .modal .modal-btn {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: -20px;
+    gap: 10px;
+  }
+
+  .modal-btn button {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .modal .multi-image {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
   }
 }
 
