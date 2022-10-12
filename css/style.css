@@ -589,6 +589,12 @@ footer {
   font-size: 16px;
 }
 
+.modal .modal-btn {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 10px;
+}
 
 /* Disktop version  */
 
