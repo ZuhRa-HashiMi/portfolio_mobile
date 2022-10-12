@@ -551,8 +551,8 @@ footer {
   width: 100%;
   backdrop-filter: blur(10px);
   padding: 45px 10px 30px 10px;
-  /* opacity: 0;
-  visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
   transition: visibility 0s ease 0.5s;
   z-index: 99999; 
   
@@ -622,6 +622,22 @@ footer {
 
 .modal-icon {
   padding-left: 15px;
+}
+
+/* Popup windows */
+
+.popup {
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  padding: 45px 10px 30px 10px;
+  transition: visibility 0s ease 0.5s;
+  z-index: 99999;
 }
 /* Disktop version  */
 
