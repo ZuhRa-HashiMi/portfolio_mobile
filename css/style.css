@@ -575,6 +575,15 @@ footer {
   width: 90%;
   padding-bottom: 40px;
 }
+
+
+.modal .close-btn {
+  cursor: pointer;
+  position: fixed;
+  top: 15%;
+  left: 85%;
+
+}
 /* Disktop version  */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
