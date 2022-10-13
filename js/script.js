@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
 const navSlide = () => {
   const burger = document.querySelector('.humberger-menu');
@@ -14,6 +15,86 @@ const navSlide = () => {
 };
 
 navSlide();
+
+// eslint-disable-next-line no-unused-vars
+
+const projectSection = document.querySelector('.cards-section');
+let render = '';
+
+const projects = [
+  {
+    id: 0,
+    title: '1th: Printing Data ',
+    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: '../image/Placeholder12.png',
+    technology: ['html', 'Bootstrap', 'Ruby'],
+    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+  },
+  {
+    id: 1,
+    title: '2th: Printing Data ',
+    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: '../image/Placeholder12.png',
+    technology: ['html', 'Bootstrap', 'Ruby'],
+    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+  },
+  {
+    id: 2,
+    title: '3th: Printing Data ',
+    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: '../image/Placeholder12.png',
+    technology: ['html', 'Bootstrap', 'Ruby'],
+    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+  },
+  {
+    id: 3,
+    title: '4th: Printing Data ',
+    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: '../image/Placeholder12.png',
+    technology: ['html', 'Bootstrap', 'Ruby'],
+    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+  },
+  {
+    id: 4,
+    title: '5th: Printing Data ',
+    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: '../image/Placeholder12.png',
+    technology: ['html', 'Bootstrap', 'Ruby'],
+    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+  },
+  {
+    id: 5,
+    title: '6th: Printing Data ',
+    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: '../image/Placeholder12.png',
+    technology: ['html', 'Bootstrap', 'Ruby'],
+    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+  },
+];
+
+projects.forEach((data) => {
+  render += `
+  <div class="work-card" style="background-image: url(image/Placeholder12.png)">
+  <div class="card-content flex-container ">
+      <h4 class="title">${data.title} </h4>
+      <p>${data.projectDescription}</p>
+      <ul>
+          <li>${data.technology[0]}</li>
+          <li>${data.technology[1]}</li>
+          <li>${data.technology[2]}</li>
+      </ul>
+  </div>
+  <button type="button" class="card-button" id="firstTitle">See Project</button>
+</div> 
+  `;
+  projectSection.innerHTML = render;
+});
 
 /* single Project section modal */
 
@@ -42,7 +123,7 @@ document.querySelectorAll('div.flex-container > h4').forEach((item) => {
 const popupTechno = ['HTML', 'Bootstrap', 'Ruby on Rails'];
 
 const popupDescrip = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.';
-const popupLive = 'file:///D:/micro_projects/portfolio_mobile/index.html';
+const popupLive = ' https://zuhra-hashimi.github.io/Mobile.github.io/';
 
 const popupSource = 'https://github.com/ZuhRa-HashiMi';
 
