@@ -142,7 +142,7 @@ i {
   position: absolute;
   width: 200%;
   height: 200%;
-  background-image: url('./image/Illustration-header@2x.png');
+  background-image: url('../image/Illustration-header@2x.png');
   background-repeat: no-repeat;
   background-position-x: 331px;
   background-position-y: 300px;
@@ -350,7 +350,7 @@ button:active {
 .about-me {
   padding: 120px 24px;
   background-color: #1c1a19;
-  background-image: url(../image/About-me_background_image.png);
+  background-image: url('../image/About-me_background_image.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 280px;
