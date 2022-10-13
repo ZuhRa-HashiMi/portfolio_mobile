@@ -202,10 +202,6 @@ i {
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-  border-bottom: #000 3px;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 600;
   line-height: 52px;
   height: 83px;
   margin-bottom: 20px;
@@ -1208,5 +1204,4 @@ footer {
     width: 38rem;
     grid-area: a;
   }
-
 }
