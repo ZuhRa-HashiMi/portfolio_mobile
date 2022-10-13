@@ -237,7 +237,7 @@ const success = () => {
 };
 
 submitBtn.addEventListener('click', (event) => {
-  const patttern = /[A-Z]/;
+  const patttern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!patttern.test(emailInpute.value)) {
     failed(event);
   } else {
