@@ -1121,6 +1121,61 @@ footer {
 
   /* pop up window */
 
- 
+  .modal-section {
+    padding: 60px 80px;
+  }
+
+  .modal {
+    padding: 20px;
+    border: solid 4px #ff6b00;
+  }
+
+  .modal .close-btn {
+    cursor: pointer;
+    position: fixed;
+    top: 15%;
+    left: 88%;
+  }
+
+  .modal h3 {
+    padding-top: 10px;
+    font-size: 2.8rem;
+    padding-bottom: 10px;
+  }
+
+  .modal-content {
+    display: flex;
+    gap: 15px;
+  }
+
+  .sec-container {
+    display: grid;
+    grid-template-areas:
+      'a a a b b'
+      'a a a b b'
+      'a a a c c';
+    column-gap: 20px;
+  }
+  
+  .new-btns {
+    grid-area: c;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .modal p {
+    font-size: 16px;
+    grid-area: b;
+    padding: 0;
+  }
+
+  .modal .modal-btn {
+    justify-content: flex-start;
+    gap: 10px;
+    padding-top: 50px;
+  }
+
 
 }
