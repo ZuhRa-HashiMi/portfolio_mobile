@@ -238,7 +238,7 @@ const success = () => {
 
 submitBtn.addEventListener('click', (event) => {
   const patttern = /[A-Z]/;
-  if (patttern.test(emailInpute.value)) {
+  if (!patttern.test(emailInpute.value)) {
     failed(event);
   } else {
     success();
