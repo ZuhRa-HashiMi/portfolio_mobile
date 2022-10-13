@@ -224,9 +224,8 @@ error.className = 'deactive-error';
 error.innerText = 'Email should be in LowerCase';
 errorMessage.appendChild(error);
 
-const failed = event => {
+const failed = (event) => {
   event.preventDefault();
-
   error.classList.add('wrong-email');
   error.classList.remove('deactive-error');
 };
@@ -236,7 +235,7 @@ const success = () => {
   error.classList.add('deactive-error');
 };
 
-submitBtn.addEventListener('click', event => {
+submitBtn.addEventListener('click', (event) => {
   const pattern = /[A-Z]/;
   if (pattern.test(emailInpute.value)) {
     failed(event);
