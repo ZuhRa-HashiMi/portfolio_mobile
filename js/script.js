@@ -212,3 +212,35 @@ const closeBtn = document.querySelectorAll('.new-close-img');
 closeBtn.forEach((item) => {
   item.addEventListener('click', openPopup);
 });
+
+/* Contact Form Validation */
+
+const emailInpute = document.querySelector('#email');
+const submitBtn = document.querySelector('#submit');
+const errorMessage = document.querySelector('#error-message');
+
+const error = document.createElement('small');
+error.className = 'deactive-error';
+error.innerText = 'Email should be in LowerCase';
+errorMessage.appendChild(error);
+
+const failed = (event) => {
+  event.preventDefault();
+
+  error.classList.add('wrong-email');
+  error.classList.remove('deactive-error');
+};
+
+const success = () => {
+  error.classList.add('wrong-email');
+  error.classList.remove('deactive-error');
+};
+
+submitBtn.addEventListener('click', (event) => {
+  const patttern = /[A-Z]/;
+  if (patttern.test(emailInpute.value)) {
+    failed(event);
+  } else {
+    success();
+  }
+});
