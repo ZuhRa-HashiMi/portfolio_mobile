@@ -189,10 +189,7 @@ i {
 
 .recent-works {
   color: #1c1a19;
-
-
   background-color: rgb(255, 255, 255);
-
   display: grid;
   justify-content: center;
   padding: 120px 24px 120px 24px;
@@ -201,17 +198,14 @@ i {
 
 .recent-works h3 {
   text-align: center;
-
   border-bottom: black 3px;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-
   border-bottom: #000 3px;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
-
   line-height: 52px;
   height: 83px;
   margin-bottom: 20px;
@@ -285,13 +279,10 @@ button:enabled {
 }
 
 button:hover {
-
   background-color: #fff5e1;
   border: 1px solid #f55b00;
-
   border: 1px solid #f85b00;
   background-color: #fff;
-
   color: #f55800;
 }
 
@@ -325,11 +316,8 @@ button:active {
     ),
     url(../image/Placeholder12.png);
   padding: 0 16px;
-
   padding-top: 84px;
-
   padding-top: 150px;
-
 }
 
 .card-content > h4 {
@@ -386,11 +374,8 @@ button:active {
 .about-text > p {
   font-family: Inter, sans-serif;
   font-style: normal;
-
   font-weight: normal;
-
   font-weight: 400;
-
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
@@ -1144,7 +1129,6 @@ footer {
       transform: scale(1.1);
     }
   }
-
 
   /* pop up window */
 
