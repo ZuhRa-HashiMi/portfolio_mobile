@@ -41,8 +41,8 @@ document.querySelectorAll('div.flex-container > h4').forEach((item) => {
 
 const popupTechno = ['HTML', 'Bootstrap', 'Ruby on Rails'];
 
-const popupDescrip = 'Budget-App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what';
-const popupLive = 'https://github.com/ZuhRa-HashiMi';
+const popupDescrip = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.';
+const popupLive = 'file:///D:/micro_projects/portfolio_mobile/index.html';
 
 const popupSource = 'https://github.com/ZuhRa-HashiMi';
 
