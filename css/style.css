@@ -774,7 +774,7 @@ footer {
   .about-me {
     content: '';
     background-color: #1c1a19;
-    background-image: url(./image/illustration12.png);
+    background-image: url(../image/illustration12.png);
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 10%;
@@ -832,6 +832,20 @@ footer {
     margin-right: auto;
     padding-bottom: 10px;
   }
+}
+
+/* Contact form validation */
+
+.wrong-email {
+  font-size: large;
+  color: #f55800;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.deactive-error {
+  display: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -1202,5 +1216,9 @@ footer {
   .new-project-img {
     width: 38rem;
     grid-area: a;
+  }
+
+  .wrong-email {
+    text-align: left;
   }
 }

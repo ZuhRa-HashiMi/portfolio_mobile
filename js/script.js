@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
 const navSlide = () => {
   const burger = document.querySelector('.humberger-menu');
@@ -25,7 +24,8 @@ const projects = [
   {
     id: 0,
     title: '1th: Printing Data ',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     image: '../image/Placeholder12.png',
     technology: ['html', 'Bootstrap', 'Ruby'],
     liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
@@ -34,7 +34,8 @@ const projects = [
   {
     id: 1,
     title: '2th: Printing Data ',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     image: '../image/Placeholder12.png',
     technology: ['html', 'Bootstrap', 'Ruby'],
     liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
@@ -43,7 +44,8 @@ const projects = [
   {
     id: 2,
     title: '3th: Printing Data ',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     image: '../image/Placeholder12.png',
     technology: ['html', 'Bootstrap', 'Ruby'],
     liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
@@ -52,7 +54,8 @@ const projects = [
   {
     id: 3,
     title: '4th: Printing Data ',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     image: '../image/Placeholder12.png',
     technology: ['html', 'Bootstrap', 'Ruby'],
     liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
@@ -61,7 +64,8 @@ const projects = [
   {
     id: 4,
     title: '5th: Printing Data ',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     image: '../image/Placeholder12.png',
     technology: ['html', 'Bootstrap', 'Ruby'],
     liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
@@ -70,7 +74,8 @@ const projects = [
   {
     id: 5,
     title: '6th: Printing Data ',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     image: '../image/Placeholder12.png',
     technology: ['html', 'Bootstrap', 'Ruby'],
     liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
@@ -211,4 +216,35 @@ popupBtn.forEach((item) => {
 const closeBtn = document.querySelectorAll('.new-close-img');
 closeBtn.forEach((item) => {
   item.addEventListener('click', openPopup);
+});
+
+/* Contact Form Validation */
+
+const emailInpute = document.querySelector('#email');
+const submitBtn = document.querySelector('#submit');
+const errorMessage = document.querySelector('#error-message');
+
+const error = document.createElement('small');
+error.className = 'deactive-error';
+error.innerText = 'Email should be in LowerCase';
+errorMessage.appendChild(error);
+
+const failed = (event) => {
+  event.preventDefault();
+  error.classList.add('wrong-email');
+  error.classList.remove('deactive-error');
+};
+
+const success = () => {
+  error.classList.remove('wrong-email');
+  error.classList.add('deactive-error');
+};
+
+submitBtn.addEventListener('click', (event) => {
+  const pattern = /[A-Z]/;
+  if (pattern.test(emailInpute.value)) {
+    failed(event);
+  } else {
+    success();
+  }
 });
