@@ -1156,7 +1156,7 @@ footer {
       'a a a c c';
     column-gap: 20px;
   }
-  
+
   .new-btns {
     grid-area: c;
     align-content: flex-end;
@@ -1176,7 +1176,7 @@ footer {
     gap: 10px;
     padding-top: 50px;
   }
-  
+
   .modal .multi-image {
     width: 60%;
     height: auto;
@@ -1197,5 +1197,4 @@ footer {
     width: 38rem;
     grid-area: a;
   }
-
 }
