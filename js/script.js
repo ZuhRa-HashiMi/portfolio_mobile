@@ -248,3 +248,26 @@ submitBtn.addEventListener('click', (event) => {
     success();
   }
 });
+
+// Local Storage
+
+const emailField = document.querySelector('#email');
+const nameField = document.querySelector('#fullname');
+const textField = document.querySelector('#message');
+const storeds = document.querySelectorAll('.stored');
+const obj = {};
+
+storeds.forEach((item) => {
+  item.addEventListener('input', () => {
+    obj.email = emailField.value;
+
+    obj.name = nameField.value;
+
+    obj.textarea = textField.value;
+
+    localStorage.setItem('form', JSON.stringify(obj));
+  });
+});
+
+const data = JSON.parse(localStorage.getItem('form'));
+
