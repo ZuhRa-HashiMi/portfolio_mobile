@@ -1176,6 +1176,26 @@ footer {
     gap: 10px;
     padding-top: 50px;
   }
+  
+  .modal .multi-image {
+    width: 60%;
+    height: auto;
+  }
 
+  .modal-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .popup {
+    padding: 60px 80px;
+  }
+
+  .new-project-img {
+    width: 38rem;
+    grid-area: a;
+  }
 
 }
