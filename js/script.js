@@ -271,3 +271,14 @@ storeds.forEach((item) => {
 
 const data = JSON.parse(localStorage.getItem('form'));
 
+window.onload = () => {
+  if (data.name !== undefined) {
+    nameField.value = data.name;
+  }
+  if (data.email !== undefined) {
+    emailField.value = data.email;
+  }
+  if (data.textarea !== undefined) {
+    textField.value = data.textarea;
+  }
+};
