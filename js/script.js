@@ -23,69 +23,70 @@ let render = '';
 const projects = [
   {
     id: 0,
-    title: '1th: Printing Data ',
+    title: 'RENT A HOUSE',
     projectDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: '../image/Placeholder12.png',
-    technology: ['html', 'Bootstrap', 'Ruby'],
+      'RENT A HOUSE is a react application used to rent and buy houses and uses rails api for authentication and data storage.',
+    image: 'image/1Pro.jpeg',
+    technology: ['React/Redux', 'Bootstrap', 'Ruby on Rails'],
     liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
     sourceLink: 'https://github.com/ZuhRa-HashiMi',
   },
   {
     id: 1,
-    title: '2th: Printing Data ',
+    title: 'Budget-app ',
     projectDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: '../image/Placeholder12.png',
+      'Is a mobile web application where you can manage your budget, you have a list of transactions.',
+    image: 'image/2Pro.jpeg',
     technology: ['html', 'Bootstrap', 'Ruby'],
-    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
-    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+    liveLink: 'https://budget-app-k2i1.onrender.com/splashs/index',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi/budget_app',
   },
   {
     id: 2,
-    title: '3th: Printing Data ',
+    title: 'CREATIVE COMMONS',
     projectDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: '../image/Placeholder12.png',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
-    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+      'The first capstone project at Microverse that I gave the first certificate HTML and CSS from Microverse. ',
+    image: 'image/3Pro.jpeg',
+    technology: ['html', 'Bootstrap', 'JavaScript'],
+    liveLink: 'https://zuhra-hashimi.github.io/Capston_Project/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi/Capston_Project',
   },
   {
     id: 3,
-    title: '4th: Printing Data ',
+    title: 'Countries COVID-19 Data',
     projectDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: '../image/Placeholder12.png',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
+      '[COVID-19 Data TRACKER] [COVID-19 Data TRACKER] is a data that shows for each country.',
+    image: 'image/4Pro.jpeg',
+    technology: ['html', 'Bootstrap', 'React/Redux'],
+    liveLink: 'https://github.com/ZuhRa-HashiMi/React_Capstone',
     sourceLink: 'https://github.com/ZuhRa-HashiMi',
   },
   {
     id: 4,
-    title: '5th: Printing Data ',
+    title: 'Math-Magicians',
     projectDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: '../image/Placeholder12.png',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
-    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+      'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) consisting of 3 pages.',
+    image: 'image/5Pro.jpeg',
+    technology: ['html', 'Bootstrap', 'React/Redux'],
+    liveLink: 'https://user-images.githubusercontent.com/74463413/212542586-d661a2b4-d83e-4070-9c25-435bf33c5df8.png',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi/Math_Magicians',
   },
   {
     id: 5,
-    title: '6th: Printing Data ',
+    title: 'Roz-Restaurant',
     projectDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: '../image/Placeholder12.png',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
-    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+      'This project is about building a restaurant web application based on an external API,that provides data about a list of meals.',
+    image: 'image/6Pro.jpeg',
+    technology: ['html', 'Bootstrap', 'JavaScript'],
+    liveLink: 'https://zuhra-hashimi.github.io/JS_Capastone/dist/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi/JS_Capastone',
   },
 ];
 
 projects.forEach((data) => {
   render += `
-  <div class="work-card" style="background-image: url(image/Placeholder12.png)">
+  <div class="work-card" style="background-image:  url(${data.image})">
+
   <div class="card-content flex-container ">
       <h4 class="title">${data.title} </h4>
       <p>${data.projectDescription}</p>
@@ -125,21 +126,32 @@ document.querySelectorAll('div.flex-container > h4').forEach((item) => {
   popupTitle.push(item.textContent);
 });
 
-const popupTechno = ['HTML', 'Bootstrap', 'Ruby on Rails'];
+const popupTechno = [];
+projects.forEach((data) => {
+  popupTechno.push(data.technology);
+});
+
 
 const popupDescrip = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.';
-const popupLive = ' https://zuhra-hashimi.github.io/Mobile.github.io/';
+const popupLive = []
+projects.forEach((data) => {
+  popupLive.push(data.liveLink)
+});
 
-const popupSource = 'https://github.com/ZuhRa-HashiMi';
+const popupSource = []
+projects.forEach((data) => {
+  popupSource.push(data.sourceLink)
+}) 
 
 const popupObj = {};
 for (let i = 0; i < popupTitle.length; i += 1) {
   popupObj[`Project${i}`] = {};
   popupObj[`Project${i}`].title = popupTitle[i];
-  popupObj[`Project${i}`].technologies = popupTechno;
+  popupObj[`Project${i}`].technologies = popupTechno[i];
   popupObj[`Project${i}`].description = popupDescrip;
-  popupObj[`Project${i}`].liveLink = popupLive;
-  popupObj[`Project${i}`].sourceLink = popupSource;
+  popupObj[`Project${i}`].description = popupDescrip;
+  popupObj[`Project${i}`].liveLink = popupLive[i];
+  popupObj[`Project${i}`].sourceLink = popupSource[i];
 }
 
 const popupSection = document.createElement('section');
@@ -192,6 +204,7 @@ firstBtn.href = popupObj.Project0.liveLink;
 firstBtn.className = 'button';
 firstBtn.textContent = 'See Live';
 newBtns.appendChild(firstBtn);
+
 const secondBtn = document.createElement('a');
 secondBtn.href = popupObj.Project0.sourceLink;
 secondBtn.className = 'button';
