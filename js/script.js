@@ -132,7 +132,11 @@ projects.forEach((data) => {
 });
 
 
-const popupDescrip = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.';
+const popupDescrip = [];
+projects.forEach((data) => {
+  popupDescrip.push(data.description);
+});
+
 const popupLive = []
 projects.forEach((data) => {
   popupLive.push(data.liveLink)
@@ -148,8 +152,7 @@ for (let i = 0; i < popupTitle.length; i += 1) {
   popupObj[`Project${i}`] = {};
   popupObj[`Project${i}`].title = popupTitle[i];
   popupObj[`Project${i}`].technologies = popupTechno[i];
-  popupObj[`Project${i}`].description = popupDescrip;
-  popupObj[`Project${i}`].description = popupDescrip;
+  popupObj[`Project${i}`].description = popupDescrip[i];
   popupObj[`Project${i}`].liveLink = popupLive[i];
   popupObj[`Project${i}`].sourceLink = popupSource[i];
 }
