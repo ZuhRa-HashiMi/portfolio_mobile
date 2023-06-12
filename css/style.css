@@ -153,6 +153,7 @@ i {
 .landing ul {
 	list-style-type: none;
 	margin-right: 20px;
+	z-index: 1;
 }
 
 .landing .social-icon ul {
