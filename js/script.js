@@ -26,8 +26,8 @@ const projects = [
       'RENT A HOUSE is a react application used to rent and buy houses and uses rails api for authentication and data storage.',
     image: 'image/1Pro.jpeg',
     technology: ['React', 'Redux', 'Bootstrap', 'Ruby', 'Rails'],
-    liveLink: 'https://zuhra-hashimi.github.io/Mobile.github.io/',
-    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+    liveLink: 'https://renthousefront.onrender.com/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi/RentAnItemApp',
   },
   {
     id: 1,
@@ -56,8 +56,8 @@ const projects = [
       '[COVID-19 Data TRACKER] [COVID-19 Data TRACKER] is a data that shows for each country.',
     image: 'image/4Pro.jpeg',
     technology: ['html', 'Bootstrap', 'React', 'Redux'],
-    liveLink: 'https://github.com/ZuhRa-HashiMi/React_Capstone',
-    sourceLink: 'https://github.com/ZuhRa-HashiMi',
+    liveLink: 'https://react-capostone-03b0c2.netlify.app/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi/React_Capstone',
   },
   {
     id: 4,
@@ -156,7 +156,6 @@ modal.appendChild(modalContainer);
 
 const newProjectImg = document.createElement('img');
 newProjectImg.className = 'new-project-img';
-newProjectImg.src = 'image/snapshot.jpg';
 newProjectImg.alt = 'project image';
 modalContainer.appendChild(newProjectImg);
 
@@ -185,6 +184,8 @@ const openPopup = (index) => {
   newBtns.innerHTML = '';
   newBtns.appendChild(createButton('See Live', popupData.liveLink));
   newBtns.appendChild(createButton('See Source', popupData.sourceLink));
+
+  newProjectImg.src = projects[index].image;
 
   popupSection.classList.toggle('popup');
   popupSection.classList.toggle('popup-section');
