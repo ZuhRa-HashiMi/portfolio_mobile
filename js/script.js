@@ -15,8 +15,6 @@ const navSlide = () => {
 
 navSlide();
 
-// eslint-disable-next-line no-unused-vars
-
 const projectSection = document.querySelector('.cards-section');
 let render = '';
 
@@ -27,17 +25,17 @@ const projects = [
     projectDescription:
       'RENT A HOUSE is a react application used to rent and buy houses and uses rails api for authentication and data storage.',
     image: 'image/1Pro.jpeg',
-    technology: ['React/Redux', 'Bootstrap', 'Ruby on Rails'],
-    liveLink: ' https://zuhra-hashimi.github.io/Mobile.github.io/',
+    technology: ['React', 'Redux', 'Bootstrap', 'Ruby', 'Rails'],
+    liveLink: 'https://zuhra-hashimi.github.io/Mobile.github.io/',
     sourceLink: 'https://github.com/ZuhRa-HashiMi',
   },
   {
     id: 1,
-    title: 'Budget-app ',
+    title: 'Budget-app',
     projectDescription:
       'Is a mobile web application where you can manage your budget, you have a list of transactions.',
     image: 'image/2Pro.jpeg',
-    technology: ['html', 'Bootstrap', 'Ruby'],
+    technology: ['html', 'Bootstrap', 'Ruby', 'Rails'],
     liveLink: 'https://budget-app-k2i1.onrender.com/splashs/index',
     sourceLink: 'https://github.com/ZuhRa-HashiMi/budget_app',
   },
@@ -57,7 +55,7 @@ const projects = [
     projectDescription:
       '[COVID-19 Data TRACKER] [COVID-19 Data TRACKER] is a data that shows for each country.',
     image: 'image/4Pro.jpeg',
-    technology: ['html', 'Bootstrap', 'React/Redux'],
+    technology: ['html', 'Bootstrap', 'React', 'Redux'],
     liveLink: 'https://github.com/ZuhRa-HashiMi/React_Capstone',
     sourceLink: 'https://github.com/ZuhRa-HashiMi',
   },
@@ -67,7 +65,7 @@ const projects = [
     projectDescription:
       'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) consisting of 3 pages.',
     image: 'image/5Pro.jpeg',
-    technology: ['html', 'Bootstrap', 'React/Redux'],
+    technology: ['html', 'Bootstrap', 'React'],
     liveLink: 'https://user-images.githubusercontent.com/74463413/212542586-d661a2b4-d83e-4070-9c25-435bf33c5df8.png',
     sourceLink: 'https://github.com/ZuhRa-HashiMi/Math_Magicians',
   },
@@ -85,22 +83,19 @@ const projects = [
 
 projects.forEach((data) => {
   render += `
-  <div class="work-card" style="background-image:  url(${data.image})">
-
-  <div class="card-content flex-container ">
-      <h4 class="title">${data.title} </h4>
-      <p>${data.projectDescription}</p>
-      <ul>
-          <li>${data.technology[0]}</li>
-          <li>${data.technology[1]}</li>
-          <li>${data.technology[2]}</li>
-      </ul>
-  </div>
-  <button type="button" class="card-button" id="firstTitle">See Project</button>
-</div> 
-  `;
-  projectSection.innerHTML = render;
+    <div class="work-card" style="background-image: url(${data.image})">
+      <div class="card-content flex-container">
+        <h4 class="title">${data.title}</h4>
+        <p>${data.projectDescription}</p>
+        <ul>
+          ${data.technology.map((tech) => `<li>${tech}</li>`).join('')}
+        </ul>
+      </div>
+      <button type="button" class="card-button">See Project</button>
+    </div>`;
 });
+
+projectSection.innerHTML = render;
 
 /* single Project section modal */
 
@@ -112,6 +107,7 @@ modalBtn.addEventListener('click', () => {
   modalBg.style.visibility = 'visible';
   modalBg.style.opacity = 1;
 });
+
 modalClose.addEventListener('click', () => {
   modalBg.style.visibility = 'hidden';
   modalBg.style.opacity = 0;
@@ -119,43 +115,18 @@ modalClose.addEventListener('click', () => {
 
 /* card-modal */
 
-const popupBtn = document.querySelectorAll('.card-button');
+const popupBtns = document.querySelectorAll('.card-button');
 
-const popupTitle = [];
-document.querySelectorAll('div.flex-container > h4').forEach((item) => {
-  popupTitle.push(item.textContent);
-});
-
-const popupTechno = [];
-projects.forEach((data) => {
-  popupTechno.push(data.technology);
-});
-
-
-const popupDescrip = [];
-projects.forEach((data) => {
-  popupDescrip.push(data.description);
-});
-
-const popupLive = []
-projects.forEach((data) => {
-  popupLive.push(data.liveLink)
-});
-
-const popupSource = []
-projects.forEach((data) => {
-  popupSource.push(data.sourceLink)
-}) 
-
-const popupObj = {};
-for (let i = 0; i < popupTitle.length; i += 1) {
-  popupObj[`Project${i}`] = {};
-  popupObj[`Project${i}`].title = popupTitle[i];
-  popupObj[`Project${i}`].technologies = popupTechno[i];
-  popupObj[`Project${i}`].description = popupDescrip[i];
-  popupObj[`Project${i}`].liveLink = popupLive[i];
-  popupObj[`Project${i}`].sourceLink = popupSource[i];
-}
+const popupObj = projects.reduce((obj, data, i) => {
+  obj[`Project${i}`] = {
+    title: data.title,
+    technologies: data.technology,
+    description: data.projectDescription,
+    liveLink: data.liveLink,
+    sourceLink: data.sourceLink,
+  };
+  return obj;
+}, {});
 
 const popupSection = document.createElement('section');
 popupSection.className = 'popup-section';
@@ -178,11 +149,6 @@ modal.appendChild(newTitle);
 const newTechno = document.createElement('div');
 newTechno.classList.add('new-techno', 'tags');
 modal.appendChild(newTechno);
-for (let i = 0; i < popupTechno.length; i += 1) {
-  const newTechnoItem = document.createElement('h6');
-  newTechnoItem.textContent = popupObj.Project0.technologies[i];
-  newTechno.appendChild(newTechnoItem);
-}
 
 const modalContainer = document.createElement('div');
 modalContainer.className = 'sec-container';
@@ -196,43 +162,44 @@ modalContainer.appendChild(newProjectImg);
 
 const newDescription = document.createElement('p');
 newDescription.className = 'new-description';
-newDescription.textContent = popupObj.Project0.description;
 modalContainer.appendChild(newDescription);
 
 const newBtns = document.createElement('div');
 newBtns.className = 'new-btns';
 modalContainer.appendChild(newBtns);
-const firstBtn = document.createElement('a');
-firstBtn.href = popupObj.Project0.liveLink;
-firstBtn.className = 'button';
-firstBtn.textContent = 'See Live';
-newBtns.appendChild(firstBtn);
 
-const secondBtn = document.createElement('a');
-secondBtn.href = popupObj.Project0.sourceLink;
-secondBtn.className = 'button';
-secondBtn.textContent = 'See Source';
-newBtns.appendChild(secondBtn);
-
-const openPopup = (item) => {
-  popupSection.classList.toggle('popup');
-  popupSection.classList.toggle('popup-section');
-
-  for (let i = 0; i < popupTitle.length; i += 1) {
-    if (item.target === popupBtn[i]) {
-      newTitle.textContent = popupObj[`Project${i}`].title;
-    }
-  }
+const createButton = (text, link) => {
+  const button = document.createElement('a');
+  button.href = link;
+  button.className = 'button';
+  button.textContent = text;
+  button.target = '_blank';
+  return button;
 };
 
-popupBtn.forEach((item) => {
-  item.addEventListener('click', openPopup);
+const openPopup = (index) => {
+  const popupData = popupObj[`Project${index}`];
+  newTitle.textContent = popupData.title;
+  newTechno.innerHTML = popupData.technologies.map((tech) => `<h6>${tech}</h6>`).join('');
+  newDescription.textContent = popupData.description;
+  newBtns.innerHTML = '';
+  newBtns.appendChild(createButton('See Live', popupData.liveLink));
+  newBtns.appendChild(createButton('See Source', popupData.sourceLink));
+
+  popupSection.classList.toggle('popup');
+  popupSection.classList.toggle('popup-section');
+};
+
+popupBtns.forEach((btn, index) => {
+  btn.addEventListener('click', () => openPopup(index));
 });
 
-const closeBtn = document.querySelectorAll('.new-close-img');
-closeBtn.forEach((item) => {
-  item.addEventListener('click', openPopup);
+const closeBtns = document.querySelectorAll('.new-close-img');
+closeBtns.forEach((btn) => {
+  btn.addEventListener('click', () => openPopup(0));
 });
+
+
 
 /* Contact Form Validation */
 
