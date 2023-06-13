@@ -20,20 +20,20 @@ let render = '';
 
 const projects = [
   {
-    id: 0,
-    title: 'RENT A HOUSE',
-    projectDescription:
-      'RENT A HOUSE is a react application used to rent and buy houses and uses rails api for authentication and data storage.',
-    image: 'image/1Pro.jpeg',
-    technology: ['React', 'Redux', 'Bootstrap', 'Ruby', 'Rails'],
-    liveLink: 'https://renthousefront.onrender.com/',
-    sourceLink: 'https://github.com/ZuhRa-HashiMi/RentAnItemApp',
-  },
+  id: 0,
+  title: 'Roz-Restaurant',
+  projectDescription: 'Embark on a captivating project to develop a restaurant web application leveraging an external API. This API furnishes comprehensive data on a wide range of delectable meals. Immerse yourself in the world of culinary delights as you build a dynamic platform for restaurant exploration.',
+  image: 'image/6Pro.jpeg',
+  technology: ['html', 'Bootstrap', 'JavaScript'],
+  liveLink: 'https://js-capston-project.netlify.app/',
+  sourceLink: 'https://github.com/ZuhRa-HashiMi/JS_Capastone',
+},
+
   {
     id: 1,
     title: 'Budget-app',
     projectDescription:
-      'Is a mobile web application where you can manage your budget, you have a list of transactions.',
+      'Introducing a powerful mobile web application designed to empower you in managing your budget effectively. With this intuitive platform, you gain full control over your finances by accessing a comprehensive list of transactions at your fingertips. Seamlessly track your income and expenses.',
     image: 'image/2Pro.jpeg',
     technology: ['html', 'Bootstrap', 'Ruby', 'Rails'],
     liveLink: 'https://budget-app-k2i1.onrender.com/splashs/index',
@@ -42,8 +42,7 @@ const projects = [
   {
     id: 2,
     title: 'CREATIVE COMMONS',
-    projectDescription:
-      'The first capstone project at Microverse that I gave the first certificate HTML and CSS from Microverse. ',
+    projectDescription: 'A dynamic website using HTML, CSS, Bootstrap, and JavaScript, showcasing my expertise in front-end development. This project demonstrates my deep understanding of fundamental web technologies and highlights my ability to build engaging and responsive web pages.',
     image: 'image/3Pro.jpeg',
     technology: ['html', 'Bootstrap', 'JavaScript'],
     liveLink: 'https://zuhra-hashimi.github.io/Capston_Project/',
@@ -51,34 +50,33 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Countries COVID-19 Data',
-    projectDescription:
-      '[COVID-19 Data TRACKER] [COVID-19 Data TRACKER] is a data that shows for each country.',
+    title: 'Bookstore',
+    projectDescription: 'Discover an extensive collection of beautifully displayed books for your browsing pleasure. Effortlessly expand the inventory by adding new books with a few clicks. Streamline your experience by effortlessly removing any selected book from the catalog. Enjoy a hassle-free book management experience.',
     image: 'image/4Pro.jpeg',
     technology: ['html', 'Bootstrap', 'React', 'Redux'],
-    liveLink: 'https://react-capostone-03b0c2.netlify.app/',
-    sourceLink: 'https://github.com/ZuhRa-HashiMi/React_Capstone',
+    liveLink: 'https://fluffy-marshmallow-7698d5.netlify.app/',
+    sourceLink: 'https://github.com/ZuhRa-HashiMi/Bookstore',
   },
   {
     id: 4,
     title: 'Math-Magicians',
-    projectDescription:
-      'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) consisting of 3 pages.',
+    projectDescription: 'The ultimate destination for all mathematics enthusiasts! Our website is a sleek Single Page App (SPA) featuring three captivating pages designed to engage and educate. Explore our curated content, solve intriguing math problems, and delve into fascinating mathematical concepts.',
     image: 'image/5Pro.jpeg',
     technology: ['html', 'Bootstrap', 'React'],
-    liveLink: 'https://user-images.githubusercontent.com/74463413/212542586-d661a2b4-d83e-4070-9c25-435bf33c5df8.png',
+    liveLink: 'https://zuhra-math-magicians.netlify.app/',
     sourceLink: 'https://github.com/ZuhRa-HashiMi/Math_Magicians',
   },
-  {
-    id: 5,
-    title: 'Roz-Restaurant',
-    projectDescription:
-      'This project is about building a restaurant web application based on an external API,that provides data about a list of meals.',
-    image: 'image/6Pro.jpeg',
-    technology: ['html', 'Bootstrap', 'JavaScript'],
-    liveLink: 'https://zuhra-hashimi.github.io/JS_Capastone/dist/',
-    sourceLink: 'https://github.com/ZuhRa-HashiMi/JS_Capastone',
-  },
+
+    {
+      id: 5,
+      title: 'RENT A HOUSE',
+      projectDescription:
+        '"Rent-A-House" is an innovative React application specifically designed to simplify the process of renting or purchasing houses. This user-friendly platform empowers individuals to effortlessly explore, search, and access comprehensive information about available properties.',
+      image: 'image/1Pro.jpeg',
+      technology: ['React', 'Bootstrap', 'Ruby', 'Rails'],
+      liveLink: 'https://renthousefront.onrender.com/',
+      sourceLink: 'https://github.com/ZuhRa-HashiMi/RentAnItemApp',
+    },
 ];
 
 projects.forEach((data) => {
