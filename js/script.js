@@ -69,13 +69,12 @@ const projects = [
 
     {
       id: 5,
-      title: 'RENT A HOUSE',
-      projectDescription:
-        '"Rent-A-House" is an innovative React application specifically designed to simplify the process of renting or purchasing houses. This user-friendly platform empowers individuals to effortlessly explore, search, and access comprehensive information about available properties.',
-      image: 'image/1Pro.jpeg',
-      technology: ['React', 'Bootstrap', 'Ruby', 'Rails'],
-      liveLink: 'https://renthousefront.onrender.com/',
-      sourceLink: 'https://github.com/ZuhRa-HashiMi/RentAnItemApp',
+      title: 'Leaderboard',
+      projectDescription:'Discover the impact of a dynamic Leaderboard application displaying scores from diverse players. Effortlessly import data from the Leaderboard API to enhance the platform dynamic nature. Crafted with expertise in HTML, CSS, and JavaScript, ensuring a seamless user experience.',
+      image: 'image/leader.png',
+      technology: ['HTML', 'Bootstrap', 'JavaScript'],
+      liveLink: 'https://jocular-mooncake-f85f8b.netlify.app/',
+      sourceLink: 'https://github.com/ZuhRa-HashiMi/Leaderboard-app',
     },
 ];
 
